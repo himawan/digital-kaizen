@@ -3,7 +3,7 @@
     <title>Digital Kaizen</title>
     <link href="https://himawan.github.io/digital-kaizen/feed.xml" rel="self" />
     <link href="https://himawan.github.io/digital-kaizen" />
-    <updated>2021-01-23T15:02:55+07:00</updated>
+    <updated>2021-01-23T16:05:31+07:00</updated>
     <author>
         <name>Himawan</name>
     </author>
@@ -20,15 +20,19 @@
             <category term="Grafana"/>
             <category term="Chart"/>
 
-        <updated>2021-01-23T15:02:55+07:00</updated>
+        <updated>2021-01-23T16:05:31+07:00</updated>
             <summary>
                 <![CDATA[
-                    Grafana adalah sebuah software opensource yang banyak dipergunakan untuk membaca sebuah data matrics untuk dibuat menjadi sebuah grafik yang menarik. Grafana sering sekali dipergunakan untuk monitoring dan melakukan analisis data, dikarenakan tampilan utamanya yang berbentuk dashboard yang memikat. Grafana mendukung banyak storage backends yang berbeda untuk&hellip;
+                    <figure class="post__image"><img loading="lazy"  src="https://himawan.github.io/digital-kaizen/media/posts/28/install-grafana-pada-debian.png" sizes="(max-width: 48em) 100vw, 768px" srcset="https://himawan.github.io/digital-kaizen/media/posts/28/responsive/install-grafana-pada-debian-xs.png 300w ,https://himawan.github.io/digital-kaizen/media/posts/28/responsive/install-grafana-pada-debian-sm.png 480w ,https://himawan.github.io/digital-kaizen/media/posts/28/responsive/install-grafana-pada-debian-md.png 768w"  alt="Install Grafana pada Debian Linux" width="1200" height="630"></figure>
+<p>Grafana adalah sebuah software opensource yang banyak dipergunakan untuk membaca sebuah data <em>matrics</em> untuk dibuat menjadi sebuah grafik yang menarik. Grafana sering sekali dipergunakan untuk monitoring dan melakukan analysis data, dikarenakan tampilan utamanya yang berbentuk dashboard yang memikat.</p>
+
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                <p>Grafana adalah sebuah software opensource yang banyak dipergunakan untuk membaca sebuah data <em>matrics</em> untuk dibuat menjadi sebuah grafik yang menarik. Grafana sering sekali dipergunakan untuk monitoring dan melakukan analisis data, dikarenakan tampilan utamanya yang berbentuk dashboard yang memikat.</p>
+                <figure class="post__image"><img loading="lazy"  src="https://himawan.github.io/digital-kaizen/media/posts/28/install-grafana-pada-debian.png" sizes="(max-width: 48em) 100vw, 768px" srcset="https://himawan.github.io/digital-kaizen/media/posts/28/responsive/install-grafana-pada-debian-xs.png 300w ,https://himawan.github.io/digital-kaizen/media/posts/28/responsive/install-grafana-pada-debian-sm.png 480w ,https://himawan.github.io/digital-kaizen/media/posts/28/responsive/install-grafana-pada-debian-md.png 768w"  alt="Install Grafana pada Debian Linux" width="1200" height="630"></figure>
+<p>Grafana adalah sebuah software opensource yang banyak dipergunakan untuk membaca sebuah data <em>matrics</em> untuk dibuat menjadi sebuah grafik yang menarik. Grafana sering sekali dipergunakan untuk monitoring dan melakukan analysis data, dikarenakan tampilan utamanya yang berbentuk dashboard yang memikat.</p>
+
 <p><img loading="lazy" src="https://grafana.com/static/img/grafana/showcase_visualize.jpg" data-is-external-image="true"  alt="Grafana: The open observability platform | Grafana Labs"></p>
 <p>Grafana mendukung banyak <em>storage backends </em>yang berbeda untuk setiap data time series (<em>Source Data</em>) yang ingin di visualisasikan. Setiap <em>source data juga memiliki</em> Query Editor yang disesuaikan untuk memudahkan kita melakukan pengambilan data dari storage backends yang kita pilih tentunya.</p>
 <p>Grafana sangat cocok untuk anda para developer yang tidak sempat membuat reporting ataupun monitoring tool pada project anda. Cukup dengan menginstall grafana pada server anda, tentunya dapat juga di jalankan pada mini komputer seperti raspberry pi, kemudian anda dapat langsung melakukan query kedatabase anda dan menampilkannya pada dasboard Grafana yang dapat di akses melalui browser secara langsung, jadi laporan grafik anda dapat di lihat pada semua device, dari handphone sampai desktop.</p>
