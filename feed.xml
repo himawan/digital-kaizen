@@ -3,12 +3,62 @@
     <title>Digital Kaizen</title>
     <link href="https://himawan.github.io/digital-kaizen/feed.xml" rel="self" />
     <link href="https://himawan.github.io/digital-kaizen" />
-    <updated>2021-01-23T16:05:31+07:00</updated>
+    <updated>2021-01-23T18:46:39+07:00</updated>
     <author>
         <name>Himawan</name>
     </author>
     <id>https://himawan.github.io/digital-kaizen</id>
 
+    <entry>
+        <title>Cara install Mosquitto pada Debian Linux</title>
+        <author>
+            <name>Himawan</name>
+        </author>
+        <link href="https://himawan.github.io/digital-kaizen/cara-install-mosquitto-pada-debian-linux.html"/>
+        <id>https://himawan.github.io/digital-kaizen/cara-install-mosquitto-pada-debian-linux.html</id>
+            <category term="Raspberry Pi"/>
+            <category term="MQTT"/>
+            <category term="Debian"/>
+            <category term="Communication"/>
+
+        <updated>2021-01-23T18:46:17+07:00</updated>
+            <summary>
+                <![CDATA[
+                    <p>Mosquitto adalah MQTT broker open source yang mengimplementasikan MQTT versi 3.1.0, 3.1.1 dan versi 5.0, dan dapat di download secara gratis untuk versi Windows maupun Linux.</p>
+<p>Yang belum tahu apa itu MQTT, MQTT adalah singkatan dari <strong>Message Queue Telemetry</strong> <strong>Transport</strong> , yang merupakan protokol yang sedari awalnya dirancang khusus untuk komunikasi “<em>machine</em> to <em>machine</em>“.</p>
+
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>Mosquitto adalah MQTT broker open source yang mengimplementasikan MQTT versi 3.1.0, 3.1.1 dan versi 5.0, dan dapat di download secara gratis untuk versi Windows maupun Linux.</p>
+<p>Yang belum tahu apa itu MQTT, MQTT adalah singkatan dari <strong>Message Queue Telemetry</strong> <strong>Transport</strong> , yang merupakan protokol yang sedari awalnya dirancang khusus untuk komunikasi “<em>machine</em> to <em>machine</em>“.</p>
+
+<p>Protokol MQTT ini sering di pergunakan pada dunia IoT dikarenakan kecilnya data yang dikirimkan, dimana hanya sekitar 2 byte saja pada headernya. Packet yang dikirimkan pada protokol MQTT ini dikirim dalam bentuk <em>byte array</em>, jadi bagi anda yang melakukan pemrograman menggunakan protokol MQTT ini harus melakukan konversi dulu sebelum mengirimkan datanya.</p>
+<p>Sekarang saya akan berikan tutorial cara penginstalan Mosquitto pada Linux versi Debian, yang dapat anda terapkan juga pada RaspberyOS pada board Raspberry Pi.</p>
+<ul>
+<li>Lakukan apt-get update, dilanjtkan dengan menginstall Mosquitto dengan perintah berikut pada Linux Terminal<br>
+<pre><code>sudo apt-get update</code><br><code>sudo apt-get install mosquitto</code></pre>
+</li>
+<li>Port default pada Mosquitto adalah 1883, untuk menggantinya ke nomor yang lain, misalkan 1884, buka dan edit file <strong><em>/etc/mosquitto/mosquitto.conf</em> </strong>dengan mengetikkan perintah berikut pada terminal<br>
+<pre><code>sudo nano /etc/mosquitto/mosquitto.conf</code></pre>
+kemudian tambahkan baris berikut<br>
+<pre><code>port 1884</code></pre>
+Jika sudah, simpan perubahan file tersebut, lalu restart service dengan perintah berikut<br>
+<pre><code>sudo systemctl restart mosquitto</code></pre>
+</li>
+<li>Untuk menghapus retain message yang menempel pada broker Mosquitto,anda dapat lakukan cara berikut. Pertama-tama matikan terlebih dahulu service nya<br>
+<pre><code>sudo service mosquitto stop</code></pre>
+Kemudian hapus file moquitto.db<br>
+<pre><code>sudo rm /var/lib/mosquitto/mosquitto.db</code></pre>
+Lalu jalankan kembali service nya<br>
+<pre><code>sudo service mosquitto start</code></pre>
+</li>
+</ul>
+<p>Demikian tutorial cara instalasi MQTT broker Mosquitto pada system operasi Linux versi Debian...Selamat berkomunikasi.</p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Cara Install Grafana pada Debian Linux</title>
         <author>
@@ -16,11 +66,13 @@
         </author>
         <link href="https://himawan.github.io/digital-kaizen/cara-install-grafana-pada-debian-linux.html"/>
         <id>https://himawan.github.io/digital-kaizen/cara-install-grafana-pada-debian-linux.html</id>
+            <category term="Raspberry Pi"/>
             <category term="Monitoring Tools"/>
             <category term="Grafana"/>
+            <category term="Debian"/>
             <category term="Chart"/>
 
-        <updated>2021-01-23T16:05:31+07:00</updated>
+        <updated>2021-01-23T18:46:39+07:00</updated>
             <summary>
                 <![CDATA[
                     <figure class="post__image"><img loading="lazy"  src="https://himawan.github.io/digital-kaizen/media/posts/28/install-grafana-pada-debian.png" sizes="(max-width: 48em) 100vw, 768px" srcset="https://himawan.github.io/digital-kaizen/media/posts/28/responsive/install-grafana-pada-debian-xs.png 300w ,https://himawan.github.io/digital-kaizen/media/posts/28/responsive/install-grafana-pada-debian-sm.png 480w ,https://himawan.github.io/digital-kaizen/media/posts/28/responsive/install-grafana-pada-debian-md.png 768w"  alt="Install Grafana pada Debian Linux" width="1200" height="630"></figure>
@@ -73,29 +125,6 @@
 <li>Default port untuk HTTP adalah <strong>3000 </strong>dan default user dan group adalah <strong>admin</strong>.</li>
 </ul>
 <p>Demikianlah cara instalasi Grafana pada system operasi linux versi debian, yang dapat juga dijalankan pada RaspbianOS pada <em>single board computer </em>Raspberry Pi.</p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Test Page</title>
-        <author>
-            <name>Himawan</name>
-        </author>
-        <link href="https://himawan.github.io/digital-kaizen/test-page.html"/>
-        <id>https://himawan.github.io/digital-kaizen/test-page.html</id>
-
-        <updated>2021-01-02T21:14:59+07:00</updated>
-            <summary>
-                <![CDATA[
-                     This is a Test Page for my Site 
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                
-  <p>
-    This is a Test Page for my Site
-  </p>
             ]]>
         </content>
     </entry>

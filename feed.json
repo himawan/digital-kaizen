@@ -10,6 +10,24 @@
     },
     "items": [
         {
+            "id": "https://himawan.github.io/digital-kaizen/cara-install-mosquitto-pada-debian-linux.html",
+            "url": "https://himawan.github.io/digital-kaizen/cara-install-mosquitto-pada-debian-linux.html",
+            "title": "Cara install Mosquitto pada Debian Linux",
+            "summary": "<p>Mosquitto adalah MQTT broker open source yang mengimplementasikan MQTT versi 3.1.0, 3.1.1 dan versi 5.0, dan dapat di download secara gratis untuk versi Windows maupun Linux.</p>\n<p>Yang belum tahu apa itu MQTT, MQTT adalah singkatan dari <strong>Message Queue Telemetry</strong> <strong>Transport</strong> , yang merupakan protokol yang sedari awalnya dirancang khusus untuk komunikasi “<em>machine</em> to <em>machine</em>“.</p>\n",
+            "content_html": "<p>Mosquitto adalah MQTT broker open source yang mengimplementasikan MQTT versi 3.1.0, 3.1.1 dan versi 5.0, dan dapat di download secara gratis untuk versi Windows maupun Linux.</p>\n<p>Yang belum tahu apa itu MQTT, MQTT adalah singkatan dari <strong>Message Queue Telemetry</strong> <strong>Transport</strong> , yang merupakan protokol yang sedari awalnya dirancang khusus untuk komunikasi “<em>machine</em> to <em>machine</em>“.</p>\n\n<p>Protokol MQTT ini sering di pergunakan pada dunia IoT dikarenakan kecilnya data yang dikirimkan, dimana hanya sekitar 2 byte saja pada headernya. Packet yang dikirimkan pada protokol MQTT ini dikirim dalam bentuk <em>byte array</em>, jadi bagi anda yang melakukan pemrograman menggunakan protokol MQTT ini harus melakukan konversi dulu sebelum mengirimkan datanya.</p>\n<p>Sekarang saya akan berikan tutorial cara penginstalan Mosquitto pada Linux versi Debian, yang dapat anda terapkan juga pada RaspberyOS pada board Raspberry Pi.</p>\n<ul>\n<li>Lakukan apt-get update, dilanjtkan dengan menginstall Mosquitto dengan perintah berikut pada Linux Terminal<br>\n<pre><code>sudo apt-get update</code><br><code>sudo apt-get install mosquitto</code></pre>\n</li>\n<li>Port default pada Mosquitto adalah 1883, untuk menggantinya ke nomor yang lain, misalkan 1884, buka dan edit file <strong><em>/etc/mosquitto/mosquitto.conf</em> </strong>dengan mengetikkan perintah berikut pada terminal<br>\n<pre><code>sudo nano /etc/mosquitto/mosquitto.conf</code></pre>\nkemudian tambahkan baris berikut<br>\n<pre><code>port 1884</code></pre>\nJika sudah, simpan perubahan file tersebut, lalu restart service dengan perintah berikut<br>\n<pre><code>sudo systemctl restart mosquitto</code></pre>\n</li>\n<li>Untuk menghapus retain message yang menempel pada broker Mosquitto,anda dapat lakukan cara berikut. Pertama-tama matikan terlebih dahulu service nya<br>\n<pre><code>sudo service mosquitto stop</code></pre>\nKemudian hapus file moquitto.db<br>\n<pre><code>sudo rm /var/lib/mosquitto/mosquitto.db</code></pre>\nLalu jalankan kembali service nya<br>\n<pre><code>sudo service mosquitto start</code></pre>\n</li>\n</ul>\n<p>Demikian tutorial cara instalasi MQTT broker Mosquitto pada system operasi Linux versi Debian...Selamat berkomunikasi.</p>",
+            "author": {
+                "name": "Himawan"
+            },
+            "tags": [
+                   "Raspberry Pi",
+                   "MQTT",
+                   "Debian",
+                   "Communication"
+            ],
+            "date_published": "2021-01-23T18:46:17+07:00",
+            "date_modified": "2021-01-23T18:46:17+07:00"
+        },
+        {
             "id": "https://himawan.github.io/digital-kaizen/cara-install-grafana-pada-debian-linux.html",
             "url": "https://himawan.github.io/digital-kaizen/cara-install-grafana-pada-debian-linux.html",
             "title": "Cara Install Grafana pada Debian Linux",
@@ -19,26 +37,14 @@
                 "name": "Himawan"
             },
             "tags": [
+                   "Raspberry Pi",
                    "Monitoring Tools",
                    "Grafana",
+                   "Debian",
                    "Chart"
             ],
             "date_published": "2021-01-23T15:02:55+07:00",
-            "date_modified": "2021-01-23T16:05:31+07:00"
-        },
-        {
-            "id": "https://himawan.github.io/digital-kaizen/test-page.html",
-            "url": "https://himawan.github.io/digital-kaizen/test-page.html",
-            "title": "Test Page",
-            "summary": " This is a Test Page for my Site ",
-            "content_html": "\n  <p>\n    This is a Test Page for my Site\n  </p>",
-            "author": {
-                "name": "Himawan"
-            },
-            "tags": [
-            ],
-            "date_published": "2021-01-02T21:14:59+07:00",
-            "date_modified": "2021-01-02T21:14:59+07:00"
+            "date_modified": "2021-01-23T18:46:39+07:00"
         }
     ]
 }
