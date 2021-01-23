@@ -1,0 +1,27 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Digital Kaizen",
+    "description": "",
+    "home_page_url": "https://himawan.github.io/digital-kaizen",
+    "feed_url": "https://himawan.github.io/digital-kaizen/feed.json",
+    "user_comment": "",
+    "author": {
+        "name": "Himawan"
+    },
+    "items": [
+        {
+            "id": "https://himawan.github.io/digital-kaizen/test-page.html",
+            "url": "https://himawan.github.io/digital-kaizen/test-page.html",
+            "title": "Test Page",
+            "summary": " This is a Test Page for my Site ",
+            "content_html": "\n  <p>\n    This is a Test Page for my Site\n  </p>",
+            "author": {
+                "name": "Himawan"
+            },
+            "tags": [
+            ],
+            "date_published": "2021-01-02T21:14:59+07:00",
+            "date_modified": "2021-01-02T21:14:59+07:00"
+        }
+    ]
+}

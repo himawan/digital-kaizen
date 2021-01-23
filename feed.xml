@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>Digital Kaizen</title>
+    <link href="https://himawan.github.io/digital-kaizen/feed.xml" rel="self" />
+    <link href="https://himawan.github.io/digital-kaizen" />
+    <updated>2021-01-02T21:14:59+07:00</updated>
+    <author>
+        <name>Himawan</name>
+    </author>
+    <id>https://himawan.github.io/digital-kaizen</id>
+
+    <entry>
+        <title>Test Page</title>
+        <author>
+            <name>Himawan</name>
+        </author>
+        <link href="https://himawan.github.io/digital-kaizen/test-page.html"/>
+        <id>https://himawan.github.io/digital-kaizen/test-page.html</id>
+
+        <updated>2021-01-02T21:14:59+07:00</updated>
+            <summary>
+                <![CDATA[
+                     This is a Test Page for my Site 
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                
+  <p>
+    This is a Test Page for my Site
+  </p>
+            ]]>
+        </content>
+    </entry>
+</feed>
