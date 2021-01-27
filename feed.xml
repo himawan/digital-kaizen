@@ -3,7 +3,7 @@
     <title>Digital Kaizen</title>
     <link href="https://himawan.github.io/digital-kaizen/feed.xml" rel="self" />
     <link href="https://himawan.github.io/digital-kaizen" />
-    <updated>2021-01-27T14:10:19+07:00</updated>
+    <updated>2021-01-27T14:19:18+07:00</updated>
     <author>
         <name>Himawan</name>
     </author>
@@ -21,16 +21,18 @@
             <category term="Debian"/>
             <category term="Administrator"/>
 
-        <updated>2021-01-27T14:10:19+07:00</updated>
+        <updated>2021-01-27T14:19:18+07:00</updated>
             <summary>
                 <![CDATA[
-                    <p>Apa itu Webmin? Kurang lebih Webmin adalah Web Administration, yaitu sebuah aplikasi dengan antarmuka berbasis web untuk administrasi sistem berbasis Linux/Unix. Dengannya anda dapat mengatur account pengguna, setup Apache, DNS, file sharing, dan masih banyak lagi. Jadi selain anda dapat mengunakan remote access secara cli seperti telnet dan ssh, anda juga dapat mengakses system Linux anda melalui web dengan tampilan Gui yang menawan tentunya..</p>
+                    <figure class="post__image align-center"><img loading="lazy"  src="https://himawan.github.io/digital-kaizen/media/posts/26/install-webmin-pada-debian.png" sizes="(max-width: 48em) 100vw, 768px" srcset="https://himawan.github.io/digital-kaizen/media/posts/26/responsive/install-webmin-pada-debian-xs.png 300w ,https://himawan.github.io/digital-kaizen/media/posts/26/responsive/install-webmin-pada-debian-sm.png 480w ,https://himawan.github.io/digital-kaizen/media/posts/26/responsive/install-webmin-pada-debian-md.png 768w"  alt="Instalasi Webmin pada Debian" width="1200" height="630"></figure>
+<p>Apa itu Webmin? Kurang lebih Webmin adalah Web Administration, yaitu sebuah aplikasi dengan antarmuka berbasis web untuk administrasi sistem berbasis Linux/Unix. Dengannya anda dapat mengatur account pengguna, setup Apache, DNS, file sharing, dan masih banyak lagi. Jadi selain anda dapat mengunakan remote access secara cli seperti telnet dan ssh, anda juga dapat mengakses system Linux anda melalui web dengan tampilan Gui yang menawan tentunya..</p>
 
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                <p>Apa itu Webmin? Kurang lebih Webmin adalah Web Administration, yaitu sebuah aplikasi dengan antarmuka berbasis web untuk administrasi sistem berbasis Linux/Unix. Dengannya anda dapat mengatur account pengguna, setup Apache, DNS, file sharing, dan masih banyak lagi. Jadi selain anda dapat mengunakan remote access secara cli seperti telnet dan ssh, anda juga dapat mengakses system Linux anda melalui web dengan tampilan Gui yang menawan tentunya..</p>
+                <figure class="post__image align-center"><img loading="lazy"  src="https://himawan.github.io/digital-kaizen/media/posts/26/install-webmin-pada-debian.png" sizes="(max-width: 48em) 100vw, 768px" srcset="https://himawan.github.io/digital-kaizen/media/posts/26/responsive/install-webmin-pada-debian-xs.png 300w ,https://himawan.github.io/digital-kaizen/media/posts/26/responsive/install-webmin-pada-debian-sm.png 480w ,https://himawan.github.io/digital-kaizen/media/posts/26/responsive/install-webmin-pada-debian-md.png 768w"  alt="Instalasi Webmin pada Debian" width="1200" height="630"></figure>
+<p>Apa itu Webmin? Kurang lebih Webmin adalah Web Administration, yaitu sebuah aplikasi dengan antarmuka berbasis web untuk administrasi sistem berbasis Linux/Unix. Dengannya anda dapat mengatur account pengguna, setup Apache, DNS, file sharing, dan masih banyak lagi. Jadi selain anda dapat mengunakan remote access secara cli seperti telnet dan ssh, anda juga dapat mengakses system Linux anda melalui web dengan tampilan Gui yang menawan tentunya..</p>
 
 <p>Kurang lebih ada dua cara yang biasa dilakukan untuk menginstall webmin pada system operasi Linux versi Debian, termasuk RaspbianOS untuk Raspberry Pi board tentunya. Pilihan pertama dapt menggunakan file instalasi package untuk debian, yaitu file berekstensi <strong>.deb</strong>, dan pilihan kedua menggunakan apt repository, yang mana saya lebih merekomendasikan cara kedua ini, karena bisa dengan mudah melakukan update hanya dengan <em>apt-update</em> command. Mari kita lihat satu-persatu cara yang telah saya jelaskan di atas.</p>
 <p>Pilihan pertama: menggunakan debian package</p>
