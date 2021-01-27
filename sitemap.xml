@@ -6,7 +6,7 @@
 </url>
 <url>
 <loc>https://himawan.github.io/digital-kaizen/cara-install-grafana-pada-debian-linux.html</loc>
-<lastmod>2021-01-23T19:34:09+07:00</lastmod>
+<lastmod>2021-01-27T14:09:29+07:00</lastmod>
 <image:image>
 <image:loc>https://himawan.github.io/digital-kaizen/media\posts\28/install-grafana-pada-debian.png</image:loc>
 <image:title><![CDATA[Install Grafana pada Debian Linux]]></image:title>
@@ -14,7 +14,7 @@
 </url>
 <url>
 <loc>https://himawan.github.io/digital-kaizen/cara-install-monitorix-pada-debian-linux.html</loc>
-<lastmod>2021-01-25T20:18:00+07:00</lastmod>
+<lastmod>2021-01-27T14:09:50+07:00</lastmod>
 <image:image>
 <image:loc>https://himawan.github.io/digital-kaizen/media\posts\27/install-monitorix-pada-debian.png</image:loc>
 <image:title><![CDATA[Install Monitorix pada Debian System]]></image:title>
@@ -22,10 +22,14 @@
 </url>
 <url>
 <loc>https://himawan.github.io/digital-kaizen/cara-install-mosquitto-pada-debian-linux.html</loc>
-<lastmod>2021-01-23T19:55:10+07:00</lastmod>
+<lastmod>2021-01-27T14:09:08+07:00</lastmod>
 <image:image>
 <image:loc>https://himawan.github.io/digital-kaizen/media\posts\29/install-mosquitto-pada-debian.png</image:loc>
 <image:title><![CDATA[Cara Instalasi Mosquitto Broker pada Debian Linux]]></image:title>
 </image:image>
+</url>
+<url>
+<loc>https://himawan.github.io/digital-kaizen/cara-install-webmin-pada-debian-linux.html</loc>
+<lastmod>2021-01-27T14:10:19+07:00</lastmod>
 </url>
 </urlset>
