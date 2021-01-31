@@ -1,7 +1,7 @@
-# digital-kaizen #
-Digital Kaizen Website
+# Digital Kaizen Source Code #
 
-Go to site <https://himawan.github.io/digital-kaizen/>
-Branch ini berisi contoh kode dari artikel pada Digital Kaizen Website
+Branch ini berisi contoh kode dari artikel pada Digital Kaizen Website 
+
+<https://himawan.github.io/digital-kaizen/>
 
  
